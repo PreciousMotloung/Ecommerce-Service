@@ -1,0 +1,30 @@
+# Environment / secrets — never commit
+.env
+.env.*
+!.env.example
+
+# Maven build output
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+*.classpath
+*.project
+.settings/
+
+# OS artefacts
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+logs/
+
+# Spring Boot DevTools restart file
+.spring-boot-devtools.properties
