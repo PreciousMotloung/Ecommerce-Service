@@ -21,11 +21,8 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
-      - name: Build project
-        run: mvn clean install -B --no-transfer-progress
-
-      - name: Run tests
-        run: mvn test -B --no-transfer-progress
+      - name: Build, test, and verify coverage (80% minimum)
+        run: mvn verify -B --no-transfer-progress
 
       - name: Upload test results
         if: always()
